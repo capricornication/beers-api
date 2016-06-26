@@ -7,3 +7,5 @@
       	$scope.beers = response.data;
       });
     };
+  });
+}());

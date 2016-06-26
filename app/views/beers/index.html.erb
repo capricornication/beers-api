@@ -3,6 +3,7 @@
 <h1>Beers!</h1>
 	<div ng-controller="beerCtrl" ng-init="setup()">
 		<div ng-repeat="beer in beers track by $index">
+			<div>{{beer.name}}</div>
 		</div>
 	</div>
 </div>
