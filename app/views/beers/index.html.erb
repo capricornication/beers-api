@@ -2,8 +2,26 @@
   {{ 1 + 1 }}
 <h1>Beers!</h1>
 	<div ng-controller="beerCtrl" ng-init="setup()">
+		<table style="width:100%">
+		  <tr>
+		    <td class="one"><h3>Name</h3></td>
+		    <td class="one"><h3>Style</h3></td>
+		    <td class="one"><h3>Alcohol</h3></td>
+		    <td class="one"><h3>Name</h3></td>
+		  </tr>
+		</table>
+
 		<div ng-repeat="beer in beers track by $index">
-			<div>{{beer.name}}</div>
+			<table style="width:100%">
+			  <tr>
+			    <td class="one">{{ beer.name }}</td>
+			    <td class="one">{{ beer.style }}</td> 
+			    <td class="one">{{ beer.alcohol }}</td>
+			    <td class="one">{{ beer.ibu }}</td>
+			  </tr>
+			</table>
 		</div>
 	</div>
 </div>
+
+
